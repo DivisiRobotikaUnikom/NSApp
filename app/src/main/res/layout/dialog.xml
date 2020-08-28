@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/bWifi"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="WIFI" />
+
+            <Button
+                android:id="@+id/bNone"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="NONE" />
+
+            <Button
+                android:id="@+id/bBlue"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="BLUETOOTH" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="25dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="PWM maju" />
+
+                <TextView
+                    android:id="@+id/tvMaju"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="0" />
+            </LinearLayout>
+
+            <SeekBar
+                android:id="@+id/sbMaju"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:max="200" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="PWM belok" />
+
+                <TextView
+                    android:id="@+id/tvBelok"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="0" />
+            </LinearLayout>
+
+            <SeekBar
+                android:id="@+id/sbBelok"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:max="200" />
+
+            <Button
+                android:id="@+id/bPwm"
+                android:layout_width="600px"
+                android:layout_height="200px"
+                android:layout_gravity="center"
+                android:layout_marginTop="25dp"
+                android:layout_marginBottom="10dp"
+                android:layout_weight="1"
+                android:text="Set PWM"
+                android:textSize="32dp"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_marginTop="15dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Aplikasi akan di gunakan di robot?"
+            android:layout_gravity="center"
+            android:textColor="#000"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center">
+
+            <ToggleButton
+                android:id="@+id/tgRobot"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:checked="false"
+                android:text="ToggleButton"
+                android:textOff="SADEWA"
+                android:textOn="NAKULA" />
+
+            <Button
+                android:id="@+id/bSetRobot"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:text="Set Robot" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/bResetConnection"
+            android:layout_width="400dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="25dp"
+            android:text="Reset Connection to Ninebot"
+            android:layout_gravity="center"
+            android:textSize="24dp"/>
+    </LinearLayout>
+
+</RelativeLayout>
